@@ -1,38 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fdeddc;
+}
+
+.color-overlay {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #0003;
+  background-color: #FBD4AB;
+  padding: 50px;
+}
+
+.login-form-container {
   text-align: center;
+  margin-bottom: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-group {
   display: flex;
   flex-direction: column;
+  margin-right: 16px;
+  grid-gap: 11px;
+  margin-bottom: 5px;
+}
+
+.form-group label {
+  margin-bottom: 0;
+}
+
+.form-inline {
+  display: flex;
+}
+
+.photo-container {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center; 
 }
 
-.App-link {
-  color: #61dafb;
+.photo-label {
+  display: inline-block;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-icon {
+  width: 100px;
+  height: 100px;
+  margin-right: 8px;
+  object-fit: contain; 
+}
+
+.photo-input {
+  display: none;
+}
+
+.lexend {
+  font-family: 'Lexend', sans-serif;
+  margin-bottom: 4px;
 }
